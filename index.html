@@ -4,141 +4,152 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Loren Sofía | Desarrolladora en formación</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <style>
-    :root {
-      --lila: #c8a2c8;
-      --lila-claro: #f5eff7;
-      --gris-suave: #f9f9f9;
-      --texto: #2e2e2e;
-      --blanco: #ffffff;
-    }
-
     body {
-      margin: 0;
+      background-color: #f8f0fc;
       font-family: 'Segoe UI', sans-serif;
-      background-color: var(--lila-claro);
-      color: var(--texto);
+      color: #343434;
     }
 
-    header {
-      background-color: var(--lila);
-      color: var(--blanco);
-      padding: 60px 20px;
+    .hero {
+      background: linear-gradient(to right, #caa0d2, #e0c6ec);
+      color: white;
+      padding: 80px 0;
       text-align: center;
     }
 
-    header h1 {
-      font-size: 2.8em;
-      margin: 0;
+    .hero h1 {
+      font-size: 3rem;
     }
 
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 850px;
-      margin: auto;
-    }
-
-    h2 {
-      color: var(--lila);
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul li {
-      background: var(--blanco);
-      padding: 15px 20px;
-      margin: 10px 0;
-      border-left: 5px solid var(--lila);
-      border-radius: 5px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    }
-
-    .contacto {
-      text-align: center;
-      background-color: var(--gris-suave);
-      padding: 30px;
-      border-radius: 10px;
-    }
-
-    .contacto p {
-      margin: 10px 0;
-    }
-
-    a {
-      color: var(--lila);
-      text-decoration: none;
+    .section-title {
+      color: #a349a4;
+      margin-bottom: 30px;
       font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
       text-align: center;
-      padding: 20px;
-      background-color: var(--lila);
-      color: var(--blanco);
-      margin-top: 40px;
+    }
+
+    .card {
+      border: none;
+      border-left: 5px solid #a349a4;
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .footer {
+      background-color: #caa0d2;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Loren Sofía</h1>
-    <p>Estudiante de grado 11 y media técnica en Desarrollo de Software</p>
-  </header>
-
-  <section>
-    <h2>👩‍💻 Sobre mí</h2>
-    <p style="text-align: center;">
-      Soy Loren Sofía, estudiante de grado 11 en el INEM José Félix de Restrepo, donde también curso la media técnica en Desarrollo de Software. Me interesa la tecnología, la lógica de programación y el diseño web. Busco crecer como desarrolladora combinando mis conocimientos técnicos con habilidades personales como la comunicación, el trabajo en equipo y la adaptación al cambio.
-    </p>
+  <section class="hero">
+    <div class="container">
+      <h1 class="fw-bold">Loren Sofía</h1>
+      <p class="lead">Estudiante de grado 11 y media técnica en Desarrollo de Software</p>
+    </div>
   </section>
 
-  <section>
-    <h2>💼 Habilidades</h2>
-    <ul>
-      <li>Facilidad para aprender nuevas tecnologías</li>
-      <li>Buena comunicación oral y escrita</li>
-      <li>Trabajo colaborativo y en equipo</li>
-      <li>Responsabilidad y organización personal</li>
-      <li>Resolución de problemas con pensamiento lógico</li>
-      <li>Adaptabilidad y actitud positiva ante los retos</li>
-    </ul>
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title">Sobre mí</h2>
+      <p class="text-center">
+        Soy Loren Sofía, estudiante de grado 11 en el INEM José Félix de Restrepo, donde también curso la media técnica en Desarrollo de Software. Me interesa la tecnología, la lógica de programación y el diseño web. Busco crecer como desarrolladora combinando mis conocimientos técnicos con habilidades personales como la comunicación, el trabajo en equipo y la adaptación al cambio.
+      </p>
+    </div>
   </section>
 
-  <section>
-    <h2>🎧 Pasatiempos e intereses</h2>
-    <ul>
-      <li>Leer libros de desarrollo personal y ficción</li>
-      <li>Ver series con tramas creativas o reflexivas</li>
-      <li>Escuchar música como forma de inspiración</li>
-      <li>Escribir y reflexionar en tiempos de calma</li>
-      <li>Disfrutar momentos con amigos y familia</li>
-    </ul>
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Habilidades</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-3">
+            <i class="bi bi-lightning-charge-fill me-2"></i> Facilidad para aprender nuevas tecnologías
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3">
+            <i class="bi bi-chat-dots-fill me-2"></i> Buena comunicación oral y escrita
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3">
+            <i class="bi bi-people-fill me-2"></i> Trabajo colaborativo y en equipo
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3">
+            <i class="bi bi-check-circle-fill me-2"></i> Responsabilidad y organización personal
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3">
+            <i class="bi bi-cpu-fill me-2"></i> Resolución de problemas con pensamiento lógico
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3">
+            <i class="bi bi-arrow-repeat me-2"></i> Adaptabilidad y actitud positiva ante los retos
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="contacto">
-    <h2>📫 Contacto</h2>
-    <p><strong>Correo:</strong> <a href="mailto:0731sofia.padierna@gmail.com">0731sofia.padierna@gmail.com</a></p>
-    <p><strong>Instagram:</strong> <a href="https://instagram.com/kim_sofiaa01" target="_blank">@kim_sofiaa01</a></p>
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title">Pasatiempos e intereses</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-3">
+            <i class="bi bi-book-fill me-2"></i> Leer libros de desarrollo personal y ficción
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <i class="bi bi-tv-fill me-2"></i> Ver series creativas o reflexivas
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <i class="bi bi-music-note-beamed me-2"></i> Escuchar música como inspiración
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <i class="bi bi-pencil-fill me-2"></i> Escribir y reflexionar
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <i class="bi bi-emoji-smile-fill me-2"></i> Compartir con amigos y familia
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="section-title">Contacto</h2>
+      <p><i class="bi bi-envelope-fill me-2"></i><a href="mailto:0731sofia.padierna@gmail.com">0731sofia.padierna@gmail.com</a></p>
+      <p><i class="bi bi-instagram me-2"></i><a href="https://instagram.com/kim_sofiaa01" target="_blank">@kim_sofiaa01</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
     <p>© 2025 Loren Sofía — Desarrolladora en formación</p>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
